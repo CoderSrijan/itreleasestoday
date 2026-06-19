@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: monospace;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline rgb(223, 0, 156);
+}
+
+#logo{
+    font-size: 280%;
+    color: #b00677;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    cursor: pointer;
+}
+
+.container{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* margin-right: 20px; */
+    grid-gap: 10px;
+}
+
+.contents img{
+    height: 370px;
+    /* height: auto; */
+    /* margin: 0px 17px 0px 17px; */
+    /* width: 280px; */
+    width: 100%;
+    max-width: 280px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.contents{
+    text-align: center;
+    font-size: 139%;
+overflow: hidden;
+}
+
+.contents a{
+    text-decoration: none;
+    color: #ef1f8e;
+    border: 2px solid #ef1f8e;
+    border-radius: 4px;
+    /* background-color: #1806b0; */
+    display: inline-flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 8px 16px;  
+    max-width: 280px;
+    align-items: center;
+}
+
+.trailer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page{
+    color: #cb0974;
+    /* background-color: rgb(65, 3, 87); */
+    /* height: 100vh; */
+}
+
+.page a{
+    text-decoration: none;
+    /* color: #494969; */
+    font-weight: 600;
+    /* background-color: rgba(7, 7, 7, 0.681); */
+    /* font-size: 100px; */
+    justify-content: center;
+}
+
+.page a img{
+    height: 150px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.page h1{
+    background-color: #101010;
+    color: #ffffff;
+}
+
+#watch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:700px) {
+    .page{
+        overflow: hidden;
+    }
+
+    .page a img{
+    height: 10%;
+    width: 50%;
+}
+
+    iframe{
+        width: 70%;
+        height: 25%;
+    }
+
+    .container{
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+.contents{
+    text-align: center;
+    font-size: 139%;
+overflow: hidden;
+}
+
+    .contents img{
+        width: 100%;
+        height: auto;
+    }
+}
