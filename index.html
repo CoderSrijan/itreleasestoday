@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Releases Today</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G4LX6VN633"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G4LX6VN633');
-</script>
 </head>
 <body>
     <nav>
@@ -27,18 +17,22 @@
     </nav>
     <!-- <div id="notice">Note: Site is in its beta version. <a href="mailto:srijansingh2004i@gmail.com">Report error</a> </div> -->
     <div class="filters">
-        <img src="otts/netflixic.webp" alt="">
-        <img src="otts/primeic.webp" alt="">
-        <img src="otts/jiohotstaric.webp" alt="">
-        <img src="otts/sonylivic.png" alt="">
+        <img src="otts/netflixic.webp" alt="" id="netflix" >
+        <img src="otts/primeic.webp" alt="" id="primevideo" >
+        <img src="otts/jiohotstaric.webp" alt="" id="jiohotstar" >
+        <img src="otts/sonylivic.png" alt="" id="sonyliv" >
+    </div>
+    <div class="fifalive">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ubDjWR4RT_U?si=ltE-f4SI-JHcNuHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <div class="container">
-    <div class="contents" id="card1"> 
-        <img src="series/husbands.jpg" alt="">
+    <div class="contents nfseries" id="card1"> 
+        <img src="series/husbands.jpg" alt="nf">
         <a href="husbandsinaction.html" >Husbands in Action</a>
     </div>
-    <div class="contents" id="card2"> 
-        <img src="series/Oasis.jpg" alt="">
+    <div class="contents nfseries" id="card2"> 
+        <img src="series/Oasis.jpg" alt="nf">
         <a href="oasis.html" >Oasis</a>
     </div>
     <div class="contents" id="card3"> 
@@ -49,27 +43,27 @@
         <img src="movies/Toystory5.webp" alt="">
         <a href="toystory5.html" > Toy Story 5 </a>
     </div>
-    <div class="contents" id="card5"> 
+    <div class="contents hotstar" id="card5"> 
         <img src="series/thukrakemerapyaar.jpg" alt="">
         <a href="thukrake.html" > Thukra ke mera pyaar S2 </a>
     </div>
-    <div class="contents" id="card6"> 
-        <img src="series/Voicemail for isabelle.jpg" alt="">
+    <div class="contents nfseries" id="card6"> 
+        <img src="series/Voicemail for isabelle.jpg" alt="nf">
         <a href="isabelle.html" > Voicemail for isabelle </a>
     </div>
-    <div class="contents" id="card7"> 
+    <div class="contents sony" id="card7"> 
         <img src="series/athiradi.avif" alt="">
         <a href="athiradi.html" > Athiradi </a>
     </div>
-    <div class="contents" id="card8"> 
+    <div class="contents hotstar" id="card8"> 
         <img src="series/savethetigers.avif" alt="">
         <a href="savetigers.html" >Save the Tigers</a>
     </div>
-    <div class="contents" id="card9"> 
+    <div class="contents hotstar" id="card9"> 
         <img src="series/Resort.avif" alt="">
         <a href="google.com" > Resort </a>
     </div>
-    <div class="contents" id="card10">
+    <div class="contents hotstar" id="card10">
          <img src="series/cousins&kalyanams.avif" alt="">
          <a href="google.com" > Cousins & kalyanams </a>
     </div>
@@ -77,12 +71,13 @@
          <img src="movies/Balan the boy.webp" alt="">
          <a href="google.com" > Balan: The boy </a>
     </div>
-    <div class="contents" id="card12">
+    <div class="contents hotstar" id="card12">
          <img src="series/vikramonduty.avif" alt="">
          <a href="google.com" >Vikram on Duty</a>
     </div>
 
            </div>
+           <script src="script.js"></script>
     
 </body>
 </html>
